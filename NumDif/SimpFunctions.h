@@ -61,8 +61,7 @@ vector<double> GaussSolver(double** a, double* y, int n)
     return x;
 }
 
-vector<double> GetSolution(const vector<double>& points) { //nodiscard указывает, что возвращаемое функцией значение нельзя игнорировать и нужно сохранить в какую-либо переменную
-
+vector<double> GetSolution(const vector<double>& points) { 
     int n = points.size();
     
     double** A = new double* [n];// выделяем место под матрицу
